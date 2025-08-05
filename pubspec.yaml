@@ -15,10 +15,10 @@ dependencies:
   flutter_svg: ^2.0.9
   
   # Firebase & Authentication
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.15.3
-  cloud_firestore: ^4.13.6
-  google_sign_in: ^6.1.6
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.4.3
+  google_sign_in: ^7.1.1
   
   # In-App Purchases
   in_app_purchase: ^3.1.11

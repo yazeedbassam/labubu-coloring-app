@@ -1,0 +1,18 @@
+workflows:
+  android-workflow:
+    name: Android Build
+    environment:
+      flutter: stable
+      android_signing:
+        - keystore_reference
+      vars:
+        PACKAGE_NAME: "com.labubu.coloringapp"
+    scripts:
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Flutter build apk
+        script: |
+          flutter build apk --debug
+    artifacts:
+      - build/**/outputs/**/*.apk 
