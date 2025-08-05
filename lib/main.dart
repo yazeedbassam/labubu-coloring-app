@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'screens/splash_screen.dart';
-import 'screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,13 +11,51 @@ class MyApp extends StatelessWidget {
       title: 'Labubu Coloring App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SplashScreen(),
-      routes: {
-        '/home': (context) => HomeScreen(),
-      },
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Labubu Coloring App'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.brush,
+              size: 100,
+              color: Colors.blue,
+            ),
+            SizedBox(height: 20),
+            Text(
+              'مرحباً بك في تطبيق تلوين Labubu!',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 20),
+            Text(
+              'التطبيق يعمل بنجاح!',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.green,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
