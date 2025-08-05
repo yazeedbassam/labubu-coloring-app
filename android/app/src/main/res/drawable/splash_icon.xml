@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Labubu-inspired simple icon -->
+    <path
+        android:fillColor="#FF6B9D"
+        android:pathData="M50,10 C70,10 85,25 85,45 C85,65 70,80 50,80 C30,80 15,65 15,45 C15,25 30,10 50,10 Z" />
+    
+    <!-- Eyes -->
+    <circle
+        android:fillColor="#FFFFFF"
+        android:cx="40"
+        android:cy="40"
+        android:radius="8" />
+    <circle
+        android:fillColor="#FFFFFF"
+        android:cx="60"
+        android:cy="40"
+        android:radius="8" />
+    
+    <!-- Eye pupils -->
+    <circle
+        android:fillColor="#000000"
+        android:cx="40"
+        android:cy="40"
+        android:radius="3" />
+    <circle
+        android:fillColor="#000000"
+        android:cx="60"
+        android:cy="40"
+        android:radius="3" />
+    
+    <!-- Smile -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M35,55 Q50,65 65,55" />
+        
+    <!-- Ears -->
+    <circle
+        android:fillColor="#FF6B9D"
+        android:cx="25"
+        android:cy="25"
+        android:radius="12" />
+    <circle
+        android:fillColor="#FF6B9D"
+        android:cx="75"
+        android:cy="25"
+        android:radius="12" />
+</vector>
