@@ -2,7 +2,7 @@ workflows:
   android-workflow:
     name: Android Build
     environment:
-      flutter: "3.3.0"
+      flutter: "3.0.0"
       android_signing:
         - keystore_reference
       vars:
