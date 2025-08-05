@@ -1,0 +1,14 @@
+workflows:
+  android-workflow:
+    name: Android Build
+    environment:
+      flutter: "2.10.0"
+    scripts:
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Flutter build apk
+        script: |
+          flutter build apk --debug
+    artifacts:
+      - build/**/outputs/**/*.apk 
